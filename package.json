@@ -26,7 +26,7 @@
     "posttest": "yarn run lint",
     "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js && yarn run posttest",
     "docker:build": "docker build -t loopback-todo-server .",
-    "docker:run": "docker run -p 3000:3000 -d loopback-todo-server",
+    "docker:run": "docker run -p 3000:3000 --add-host=host.docker.internal:host-gateway -d loopback-todo-server",
     "premigrate": "yarn run build",
     "migrate": "node ./dist/migrate",
     "preopenapi-spec": "yarn run build",

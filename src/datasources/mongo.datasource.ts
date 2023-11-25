@@ -11,6 +11,7 @@ const config = {
   password: '',
   database: 'test',
   useNewUrlParser: true,
+  authSource: 'admin',
 };
 
 // Observe application's life cycle to disconnect the datasource when
